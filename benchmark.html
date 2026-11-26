@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Language" content="en-us">
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>The waste collection vehicle routing problem with time windows</title>
 <style>
 <!--
@@ -40,7 +40,7 @@ table.MsoTableGrid
 routing problem with time windows</font></span></b></p>
 <p class="MsoNormal" align="left" style="text-align: center; line-height: 200%">
 <font size="5"><b>(waste collection VRPTW)</b></font></p>
-<p class="MsoNormal" align="left" style="text-align: center; line-height: 200%">　</p>
+<p class="MsoNormal" align="left" style="text-align: center; line-height: 200%">銆�</p>
 <p class="MsoNormal" align="left" style="line-height: 200%"><font size="4"><b>1. 
 Introduction</b></font></p>
 <p class="MsoNormal" style="text-indent: .3in; line-height: 200%">
@@ -69,9 +69,9 @@ Route capacity is the daily capacity for each driver: maximum number of stops,
 maximum number of lifts, maximum volume and weight that a driver can handle per 
 day. A garbage collection company's business rules set the route capacity 
 constraints and route time. Vehicle capacity dictates when a disposal trip 
-should be made. If the vehicle capacity is larger than the route’s volume 
+should be made. If the vehicle capacity is larger than the route鈥檚 volume 
 capacity, there will be only one disposal trip and it will be the last visit 
-before returning to the depot. If, however, the route’s volume capacity is more 
+before returning to the depot. If, however, the route鈥檚 volume capacity is more 
 than vehicle capacity, multiple disposal trips will be needed in a route. Since 
 there are multiple disposal facilities available, careful selection of the best 
 disposal is critical. Each vehicle is assumed to start from a depot and finish 
@@ -91,47 +91,47 @@ summarized as follows.&nbsp; </span></p>
 <p class="MsoNormal" style="line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: .3in">
 <span style="font-size: 12.0pt; line-height: 200%">Objectives:&nbsp; </span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Minimize number 
 of vehicles</span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Minimize travel 
 time </span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Maximize route 
 compactness </span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Balance 
 workload among the vehicles</span></p>
 <p class="MsoNormal" style="line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: .3in">
 <span style="font-size: 12.0pt; line-height: 200%">Constraints: </span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Time windows of 
 stops and the depot</span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Vehicle 
 Capacity (i.e., volume, weight)</span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Route Capacity 
 (i.e., the maximum number of lifts, volume and weight that can be handled per 
 vehicle per day)</span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Routing time 
 limit per vehicle</span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style="font-size: 12.0pt; line-height: 200%">Disposal trips 
 (i.e., when a vehicle is full, it must go to a disposal facility)</span></p>
 <p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: 12.0pt">
-<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">·<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style="font-size: 12.0pt; line-height: 200%">Driver’s lunch 
+<span style="font-size: 12.0pt; line-height: 200%; font-family: Symbol">路<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size: 12.0pt; line-height: 200%">Driver鈥檚 lunch 
 break</span></p>
 <p class="MsoNormal" style="text-indent: 0in; line-height: 200%"><font size="4">
 <b>2. Benchmark Problem</b></font></p>
@@ -168,7 +168,7 @@ example, 1030 stands for 10:30 AM and 1445 stands for 2:45 PM. The depot has
 stop type of 0, a landfill or transfer station has stop type 2, and a regular 
 stop has stop type 1. Table 1 shows the characteristics of the problems sets.
 </span></p>
-<p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: 12.0pt">　</p>
+<p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: 12.0pt">銆�</p>
 <p class="MsoNormal" align="left" style="line-height: 200%">
 <span style="font-size: 12.0pt; line-height: 200%">Table 1. Waste VRPTW 
 benchmark problem sets </span></p>
@@ -398,7 +398,7 @@ benchmark problem sets </span></p>
     <span style="font-family: Arial">11</span></td>
   </tr>
 </table>
-<p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; text-align: left; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: 12.0pt">　</p>
+<p class="MsoNormal" style="text-indent: -.25in; line-height: 200%; punctuation-wrap: hanging; text-autospace: ideograph-numeric ideograph-other; text-align: left; margin-left: 1.0in; margin-right: 0in; margin-top: 0in; margin-bottom: 12.0pt">銆�</p>
 
 </body>
 
