@@ -1,0 +1,2400 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="Bus_Scheduling_benchmark_files/filelist.xml">
+<link rel=Edit-Time-Data href="Bus_Scheduling_benchmark_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>4</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Log</o:Author>
+  <o:LastAuthor>Log</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>8865</o:TotalTime>
+  <o:LastPrinted>2008-08-06T04:00:00Z</o:LastPrinted>
+  <o:Created>2010-03-06T12:59:00Z</o:Created>
+  <o:LastSaved>2010-05-24T07:39:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1199</o:Words>
+  <o:Characters>6839</o:Characters>
+  <o:Company>POSTECH</o:Company>
+  <o:Lines>56</o:Lines>
+  <o:Paragraphs>16</o:Paragraphs>
+  <o:CharactersWithSpaces>8022</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="Bus_Scheduling_benchmark_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Bus_Scheduling_benchmark_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>KO</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:바탕;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:Batang;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:돋움;
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-alt:Dotum;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:굴림;
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-alt:Gulim;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1879047505 165117179 18 0 524289 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:HY신명조;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1879047513 701988089 16 0 524288 0;}
+@font-face
+	{font-family:"\@바탕";
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@굴림";
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@돋움";
+	panose-1:2 11 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"\@HY신명조";
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1879047513 701988089 16 0 524288 0;}
+@font-face
+	{font-family:"\@맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;
+	mso-font-charset:129;
+	mso-generic-font-family:modern;
+	mso-font-pitch:variable;
+	mso-font-signature:-1879047505 165117179 18 0 524289 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Comment Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:18.0pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	mso-pagination:none;
+	tab-stops:center 225.65pt right 451.3pt;
+	layout-grid-mode:char;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	mso-pagination:none;
+	tab-stops:center 225.65pt right 451.3pt;
+	layout-grid-mode:char;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-priority:35;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"바탕","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Document Map Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:바탕;
+	mso-font-kerning:1.0pt;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"Comment Text";
+	mso-style-link:"Comment Subject Char";
+	mso-style-next:"Comment Text";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:18.0pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:8.0pt;
+	font-family:"맑은 고딕";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Comment Text";
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-ascii-font-family:바탕;
+	mso-fareast-font-family:바탕;
+	mso-hansi-font-family:바탕;
+	mso-font-kerning:1.0pt;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-ascii-font-family:바탕;
+	mso-fareast-font-family:바탕;
+	mso-hansi-font-family:바탕;
+	mso-font-kerning:1.0pt;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-ascii-font-family:바탕;
+	mso-fareast-font-family:바탕;
+	mso-hansi-font-family:바탕;
+	mso-font-kerning:1.0pt;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Document Map";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	mso-font-kerning:1.0pt;}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"Comment Text Char";
+	mso-style-link:"Comment Subject";
+	mso-bidi-font-size:12.0pt;
+	font-family:"바탕","serif";
+	mso-ascii-font-family:바탕;
+	mso-fareast-font-family:바탕;
+	mso-hansi-font-family:바탕;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"맑은 고딕";
+	mso-ascii-font-family:"맑은 고딕";
+	mso-fareast-font-family:"맑은 고딕";
+	mso-hansi-font-family:"맑은 고딕";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.Abstract, li.Abstract, div.Abstract
+	{mso-style-name:Abstract;
+	mso-style-update:auto;
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:24.0pt;
+	mso-char-indent-count:2.0;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:바탕;
+	mso-fareast-language:EN-US;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:바탕;
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("Bus_Scheduling_benchmark_files/header.html") fs;
+	mso-footnote-continuation-separator:url("Bus_Scheduling_benchmark_files/header.html") fcs;
+	mso-endnote-separator:url("Bus_Scheduling_benchmark_files/header.html") es;
+	mso-endnote-continuation-separator:url("Bus_Scheduling_benchmark_files/header.html") ecs;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 70.9pt 3.0cm 70.9pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-even-footer:url("Bus_Scheduling_benchmark_files/header.html") ef1;
+	mso-footer:url("Bus_Scheduling_benchmark_files/header.html") f1;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:59;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="18434"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=KO link=blue vlink=purple style='tab-interval:40.0pt'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>A
+school bus scheduling problem<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%;
+punctuation-wrap:simple;word-break:keep-all'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman","serif";mso-fareast-font-family:HY신명조;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%;
+punctuation-wrap:simple;word-break:keep-all'><b><span lang=EN-US>Full paper: </span></b><b><span
+lang=EN-US style='font-family:"Arial","sans-serif"'>B. Kim, J. Park, S. Kim and
+S. Sahoo, &quot;A school bus scheduling problem,” Working paper</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:150%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+HY신명조;mso-font-kerning:0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%;
+punctuation-wrap:simple;word-break:keep-all'><span lang=EN-US style='font-size:
+12.0pt;line-height:150%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+HY신명조;mso-font-kerning:0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:200%;word-break:keep-all'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif"'>1. Introduction<o:p></o:p></span></b></p>
+
+<p class=Abstract style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US
+style='mso-font-kerning:1.0pt;mso-fareast-language:KO'>We</span><span
+lang=EN-US style='mso-font-kerning:1.0pt'> consider a school bus scheduling problem
+in which route segments for each school are given. A route segment consists of
+a sequence of bus stops and their designated school. Based on the bus stops</span><span
+lang=EN-US style='mso-font-kerning:1.0pt;mso-fareast-language:KO'>, </span><span
+lang=EN-US style='mso-font-kerning:1.0pt'>the number of s</span><span
+lang=EN-US style='mso-font-kerning:1.0pt;mso-fareast-language:KO'>tudents</span><span
+lang=EN-US style='mso-font-kerning:1.0pt'> of them</span><span lang=EN-US
+style='mso-font-kerning:1.0pt;mso-fareast-language:KO'>,</span><span
+lang=EN-US style='mso-font-kerning:1.0pt'> and the school in a route, the
+route’s required service time is given. Each school has its fixed time window
+such that all the routes to the school should be completed at the school within
+the time window. A school bus can serve multiple routes for multiple schools.
+The school bus scheduling problem of this paper is to make an optimal bus
+schedule to serve all the given routes with consideration of the school time
+windows. </span><span lang=EN-US style='mso-font-kerning:1.0pt;mso-fareast-language:
+KO'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:200%;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif"'>Figure 1 shows an
+example of the school bus scheduling problem. Let r<sub>i</sub> be a route
+segment consisting of a sequence of bus stops and their destination school. Let
+s<sub>m</sub> be a school. In the figure, there are 3, 3, and 4 route segments
+for school s<sub>a</sub>, s<sub>b</sub>, and s<sub>c</sub>, respectively. Let
+[s<sub>m</sub>_st, s<sub>m</sub>_et] be the time window for school m. All the
+students attending a school should arrive at the school within the bell time
+window. When two route segments can be served by the same bus without violating
+the bus capacity constraint and the time window of their designated schools,
+they can be scheduled to the same bus. Figure 2 shows a solution example of the
+problem of Figure 1. {r<sub>2</sub>, r<sub>6</sub>, r<sub>9</sub>}, {r<sub>1</sub>,
+r<sub>4</sub>, r<sub>8</sub>}, {r<sub>3</sub>, r<sub>7</sub>}, and {r<sub>5</sub>,
+r<sub>10</sub>} are served by bus 1, 2, 3, and 4, respectively. It is assumed
+that s<sub>a</sub>_et </span><span style='font-size:12.0pt;line-height:200%;
+mso-hansi-font-family:바탕'>≤ </span><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif"'>s<sub>b</sub>_st and s<sub>b</sub>_et
+</span><span style='font-size:12.0pt;line-height:200%;mso-hansi-font-family:
+바탕'>≤ </span><span lang=EN-US style='font-size:12.0pt;line-height:200%;
+font-family:"Times New Roman","serif"'>s<sub>c</sub>_st </span><span
+style='font-size:12.0pt;line-height:200%;mso-hansi-font-family:바탕'>≤ </span><span
+lang=EN-US style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif"'>s<sub>j</sub>_st.
+<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:200%;
+font-family:"Times New Roman","serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_5" o:spid="_x0000_i1026" type="#_x0000_t75"
+ style='width:349.5pt;height:258.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Bus_Scheduling_benchmark_files/image005.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=466 height=345
+src="Bus_Scheduling_benchmark_files/image006.gif" v:shapes="Picture_x0020_5"><![endif]></span><span
+lang=EN-US style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:200%;
+font-family:"Times New Roman","serif"'>Figure 1. An example problem<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:200%;
+font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:200%;
+font-family:"Times New Roman","serif";mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_4" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:331.5pt;
+ height:230.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Bus_Scheduling_benchmark_files/image007.emz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=442 height=307
+src="Bus_Scheduling_benchmark_files/image008.gif" v:shapes="Picture_x0020_4"><![endif]></span><span
+lang=EN-US style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:200%;
+font-family:"Times New Roman","serif"'>Figure 2. A solution example<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:200%;word-break:keep-all'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif"'>2. Benchmark Problems<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:200%;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+HY신명조'>Since there are no publicly available benchmark problems for the bus
+scheduling problem, several problems were generated as benchmark problems and
+put on http://logistics.postech.ac.kr/Bus_Scheduling_benchmark.html for other
+researchers. Some summary statistics of the problems are shown in Table 1. The
+data set consists of 15 homogeneous fleet problems and 15 heterogeneous fleet
+problems. Each file has <i style='mso-bidi-font-style:normal'>Route#</i> number
+of records and each record has the following attributes: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;mso-para-margin-left:3.0gd;
+text-indent:-24.0pt;mso-char-indent-count:-2.0;line-height:200%;word-break:
+keep-all'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>ID</span></i><span lang=EN-US style='font-size:
+12.0pt;line-height:200%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+HY신명조'>: route segment identity index<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;mso-para-margin-left:3.0gd;
+text-indent:-24.0pt;mso-char-indent-count:-2.0;line-height:200%;word-break:
+keep-all'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>start_x, start_y</span></i><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>: coordinate of the first stop of the route
+segment<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;mso-para-margin-left:3.0gd;
+text-indent:-24.0pt;mso-char-indent-count:-2.0;line-height:200%;word-break:
+keep-all'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>student_num</span></i><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>: number of students that served by the route
+segment<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;mso-para-margin-left:3.0gd;
+text-indent:-24.0pt;mso-char-indent-count:-2.0;line-height:200%;word-break:
+keep-all'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>service_duration</span></i><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>: service time of the route segment. It includes
+students’ pick-up time, traveling time, and unloading time at the destination<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;mso-para-margin-left:3.0gd;
+text-indent:-24.0pt;mso-char-indent-count:-2.0;line-height:200%;word-break:
+keep-all'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>school_x, school_y</span></i><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>: coordinate of the destination school of the
+route segment<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;mso-para-margin-left:3.0gd;
+text-indent:-24.0pt;mso-char-indent-count:-2.0;line-height:200%;word-break:
+keep-all'><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>school_tw_st, school_tw_end</span></i><span
+lang=EN-US style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>: time window of the school. Route segment’s
+service should be completed within the time window.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:200%;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+HY신명조'>Travel time between two locations (stop or school) is assumed to be an
+integer number that is calculated by Euclidean distance between their
+coordinates and truncate the fraction.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:200%;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+HY신명조'>Each problem also has its corresponding vehicle file that has the <i
+style='mso-bidi-font-style:normal'>Route#</i> number of vehicles. For example, <i
+style='mso-bidi-font-style:normal'>homo_test_file2.txt</i> has its
+corresponding vehicle file <i style='mso-bidi-font-style:normal'>homo_vehicle_file2.txt</i>
+that has the information of 13 vehicles. All the vehicles are assumed to start
+from the same location (depot). For homogeneous fleet problems, all the
+vehicles’ capacity is assumed to be 70. For heterogeneous fleet problems,
+capacity of each vehicle was randomly chosen from 40, 50, or 70.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-indent:24.0pt;
+mso-char-indent-count:2.0;line-height:200%;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;line-height:200%;font-family:"Times New Roman","serif";
+mso-fareast-font-family:HY신명조'>Table 1. Experimental benchmark problems<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=902
+ style='width:676.15pt;margin-left:4.25pt;border-collapse:collapse;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 4.95pt 0cm 4.95pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>File name<o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>School#<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>Route#<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>Student#<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
+  0cm 4.95pt 0cm 4.95pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>Vehicle file<o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>File name<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>School#<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>Route#<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>Student#<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 4.95pt 0cm 4.95pt;height:15.0pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>Vehicle file<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file1.txt">homo_test_file1.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;border:none;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;border:none;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>3<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;border:none;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>143<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file1.txt">homo_vehicle_file1.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file1.txt">hetero_test_file1.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;border:none;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>1<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;border:none;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>7<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;border:none;mso-border-top-alt:solid windowtext .5pt;
+  padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>335<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file1.txt">hetero_vehicle_file1.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file2.txt">homo_test_file2.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>2<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>13<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>611<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file2.txt">homo_vehicle_file2.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file2.txt">hetero_test_file2.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>2<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>13<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>596<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file2.txt">hetero_vehicle_file2.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file3.txt">homo_test_file3.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>3<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>20<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>975<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file3.txt">homo_vehicle_file3.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file3.txt">hetero_test_file3.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>3<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>21<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>1012<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file3.txt">hetero_vehicle_file3.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file4.txt">homo_test_file4.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>4<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>23<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>1154<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file4.txt">homo_vehicle_file4.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file4.txt">hetero_test_file4.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>4<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>24<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>1199<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file4.txt">hetero_vehicle_file4.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file5.txt">homo_test_file5.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>5<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>29<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>1448<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file5.txt">homo_vehicle_file5.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file5.txt">hetero_test_file5.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>5<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>32<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>1610<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file5.txt">hetero_vehicle_file5.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file10.txt">homo_test_file10.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>10<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>49<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>2405<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file10.txt">homo_vehicle_file10.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file10.txt">hetero_test_file10.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>10<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>58<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>3002<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file10.txt">hetero_vehicle_file10.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file20.txt">homo_test_file20.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>20<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>106<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>5097<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file20.txt">homo_vehicle_file20.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file20.txt">hetero_test_file20.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>20<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>120<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>6012<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file20.txt">hetero_vehicle_file20.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file30.txt">homo_test_file30.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>30<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>161<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>8155<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file30.txt">homo_vehicle_file30.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file30.txt">hetero_test_file30.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>30<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>187<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>9415<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file30.txt">hetero_vehicle_file30.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file40.txt">homo_test_file40.txt</a></span><span
+  lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:굴림;mso-font-kerning:0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>40<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>234<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>11528<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file40.txt">homo_vehicle_file40.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file40.txt">hetero_test_file40.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>40<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>239<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>12136<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file40.txt">hetero_vehicle_file40.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file50.txt">homo_test_file50.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>50<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>309<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>15238<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file50.txt">homo_vehicle_file50.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file50.txt">hetero_test_file50.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>50<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>286<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>14352<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file50.txt">hetero_vehicle_file50.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file60.txt">homo_test_file60.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>60<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>372<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>18551<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file60.txt">homo_vehicle_file60.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file60.txt">hetero_test_file60.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>60<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>345<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>17350<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file60.txt">hetero_vehicle_file60.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file70.txt">homo_test_file70.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>70<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>430<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>21554<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file70.txt">homo_vehicle_file70.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file70.txt">hetero_test_file70.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>70<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>408<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>20723<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file70.txt">hetero_vehicle_file70.txt&gt;</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file80.txt">homo_test_file80.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>80<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>461<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>23066<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file80.txt">homo_vehicle_file80.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file80.txt">hetero_test_file80.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>80<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>469<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>23686<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file80.txt">hetero_vehicle_file80.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file90.txt">homo_test_file90.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>90<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>514<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>25736<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border:none;border-right:solid windowtext 1.0pt;
+  mso-border-right-alt:solid windowtext .5pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file90.txt">homo_vehicle_file90.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;mso-border-left-alt:
+  solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file90.txt">hetero_test_file90.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>90<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>514<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>25736<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;padding:0cm 4.95pt 0cm 4.95pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file90.txt">hetero_vehicle_file90.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15;mso-yfti-lastrow:yes;height:15.0pt'>
+  <td width=137 nowrap style='width:102.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_test_file100.txt">homo_test_file100.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=56 nowrap style='width:41.8pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>100<o:p></o:p></span></p>
+  </td>
+  <td width=55 nowrap style='width:41.4pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>562<o:p></o:p></span></p>
+  </td>
+  <td width=60 nowrap style='width:44.85pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>28175<o:p></o:p></span></p>
+  </td>
+  <td width=145 valign=top style='width:108.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 4.95pt 0cm 4.95pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/homo_vehicle_file100.txt">homo_vehicle_file100.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=128 nowrap style='width:95.65pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_test_file100.txt">hetero_test_file100.txt</a><o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>100<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.55pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>562<o:p></o:p></span></p>
+  </td>
+  <td width=57 nowrap style='width:42.45pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 2.85pt 0cm 2.85pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='text-align:right;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'>28175<o:p></o:p></span></p>
+  </td>
+  <td width=151 valign=top style='width:113.45pt;border:none;border-bottom:
+  solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 4.95pt 0cm 4.95pt;height:15.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:widow-orphan;mso-layout-grid-align:auto;text-autospace:ideograph-other;
+  word-break:keep-all'><span lang=EN-US style='mso-bidi-font-size:10.0pt;
+  font-family:"Times New Roman","serif";mso-fareast-font-family:돋움;mso-font-kerning:
+  0pt'><a href="input/hetero_vehicle_file100.txt">hetero_vehicle_file100.txt</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:200%;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:200%;font-family:"Times New Roman","serif";mso-fareast-font-family:
+HY신명조'>You may download the zip file <a href="data_files.zip">here</a>.<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
